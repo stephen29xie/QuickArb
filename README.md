@@ -1,4 +1,6 @@
-![QuickArb Icon](icon.png)
+<p align="center">
+  <img src="icon.png" alt="QuickArb Icon" width="120" height="120">
+</p>
 
 
 # QuickArb
