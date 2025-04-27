@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+#calculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#results {
+    margin-top: 5px;
+}
+
+.side-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.side-inputs div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.side-inputs label {
+    margin-bottom: 0;
+    margin-right: 10px;
+    width: auto;
+}
+
+.side-inputs input[type="checkbox"],
+.side-inputs input[type="number"] {
+    margin-bottom: 0;
+    width: auto;
+}
+
+.side-inputs label[for="weighted"],
+.side-inputs input[type="checkbox"],
+.side-inputs label[for="totalInvestment"],
+.side-inputs input[type="number"]#totalInvestment {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#results p,
+.odds-wager-pair label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+@keyframes refresh {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#results span,
+.odds-wager-pair span {
+    background-color: #e0f7fa;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    animation: refresh 0.3s ease-out;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+#profit1,
+#profit2 {
+    animation: refresh 0.3s ease-out;
+}
+
+.odds-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.odds-input label {
+    flex: 1;
+}
+
+.odds-input input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.odds-input span {
+    flex: 1;
+    text-align: right;
+}
+
+.odds-wager-pair {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.odds-wager-pair label {
+    flex: 0 0 auto;
+    font-size: 1.1em;
+}
+
+.odds-wager-pair input {
+    flex: 0 0 auto;
+    font-size: 1.1em;
+    width: 60px;
+}
+
+.odds-wager-pair span {
+    flex: 0 0 auto;
+    font-size: 1em;
+}
+
+label,
+.odds-wager-pair span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.divider {
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+.input-pair {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-pair label {
+    margin-right: 10px;
+}

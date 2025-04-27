@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickArb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="calculator">
+        <h1><img src="favicon.png" alt="QuickArb Logo" style="width: 24px; height: 24px; vertical-align: middle;">
+            QuickArb
+        </h1>
+        <form id="betting-form">
+            <div class="side-inputs">
+                <div class="input-pair">
+                    <label for="totalInvestment">Total Bet Size:</label>
+                    <input type="number" id="totalInvestment" name="totalInvestment" value="1000" step="0.01"
+                        tabindex="-1">
+                </div>
+                <div class="input-pair">
+                    <label for="weighted">Weighted (Breakeven on Odds 1)</label>
+                    <input type="checkbox" id="weighted" name="weighted" tabindex="-1">
+                </div>
+                <div class="input-pair">
+                    <label for="roundWagers">Round Wagers to Nearest 10</label>
+                    <input type="checkbox" id="roundWagers" name="roundWagers" tabindex="-1">
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="odds-wager-pair">
+                <label for="odds1">Odds 1:</label>
+                <input type="number" id="odds1" name="odds1" step="0.01" required>
+                <span>Wager: <span id="bet1"></span></span>
+            </div>
+
+            <div class="odds-wager-pair">
+                <label for="odds2">Odds 2:</label>
+                <input type="number" id="odds2" name="odds2" step="0.01" required>
+                <span>Wager: <span id="bet2"></span></span>
+            </div>
+        </form>
+        <div id="results">
+            <p>Profit if Outcome 1 Wins: <span id="profit1"></span></p>
+            <p>Profit if Outcome 2 Wins: <span id="profit2"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
