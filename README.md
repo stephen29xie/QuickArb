@@ -13,30 +13,31 @@ Speed is crucial when placing arbitrage bets, as live odds can change rapidly. Q
 ## Features
 - Calculate optimal bet sizes for arbitrage opportunities
 - Display profits for each outcome
+
+<img src="assets/regular.gif" alt="Regular" width="300">
+
 - Flexible weighting strategies:
   - Default mode ensures equal profit regardless of which outcome occurs
   - Optional "weighted" mode allocates bets to break even on the first odds while maximizing profit on the second odds.
+
+<img src="assets/weighted.gif" alt="Weighted" width="300">
+
 - Round calculated wagers to the nearest 10. This provides less suspicious wager amounts
+
+<img src="assets/round.gif" alt="Round Wagers" width="300">
+
 - Quick navigation with hotkeys and tabbing, without the need for point-and-click navigation
   - Tabbing is optimized for seamless data entry, automatically focusing on the next input field and triggering calculations.
   - Use `Ctrl + 1` to quickly copy the calculated bet size for Odds 1 to the clipboard.
   - Use `Ctrl + 2` to quickly copy the calculated bet size for Odds 2 to the clipboard.
 
+<img src="assets/copypaste.gif" alt="Copy Values" width="300">
+
 ## Usage
 
 - **Opening and Closing the Extension**: Assign a custom hotkey in Chrome to open and close QuickArb instantly.
 - **Navigating Input Fields**: Use the `Tab` key to move seamlessly between the odds input fields and trigger a calculation. QuickArb is optimized to automatically focus on the next logical field, ensuring a smooth data entry process.
-
-
 - **Copying Values**: With `Ctrl + 1` and `Ctrl + 2`, you can quickly copy the calculated bet sizes for Odds 1 and Odds 2, respectively, directly to your clipboard.
-
-![Regular](assets/regular.gif)
-
-![Weighted](assets/weighted.gif)
-
-![Round Wagers](assets/round.gif)
-
-![Copy Values](assets/copypaste.gif)
 
 By leveraging hotkeys, users can maximize the speed of their arbitrage betting placement. This method is significantly faster than traditional mouse navigation, as it reduces the time spent on manual actions.
 
