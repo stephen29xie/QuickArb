@@ -26,7 +26,17 @@ Speed is crucial when placing arbitrage bets, as live odds can change rapidly. Q
 
 - **Opening and Closing the Extension**: Assign a custom hotkey in Chrome to open and close QuickArb instantly.
 - **Navigating Input Fields**: Use the `Tab` key to move seamlessly between the odds input fields and trigger a calculation. QuickArb is optimized to automatically focus on the next logical field, ensuring a smooth data entry process.
+
+
 - **Copying Values**: With `Ctrl + 1` and `Ctrl + 2`, you can quickly copy the calculated bet sizes for Odds 1 and Odds 2, respectively, directly to your clipboard.
+
+![Regular](assets/regular.gif)
+
+![Weighted](assets/weighted.gif)
+
+![Round Wagers](assets/round.gif)
+
+![Copy Values](assets/copypaste.gif)
 
 By leveraging hotkeys, users can maximize the speed of their arbitrage betting placement. This method is significantly faster than traditional mouse navigation, as it reduces the time spent on manual actions.
 

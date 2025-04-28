@@ -222,3 +222,8 @@ label,
 .input-pair label {
     margin-right: 10px;
 }
+
+.copy-effect {
+    background-color: #e0f7fa;
+    transition: background-color 0.5s ease;
+}

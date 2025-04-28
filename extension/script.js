@@ -9,21 +9,39 @@ function convertAmericanToDecimal(americanOdds) {
 function triggerRefreshAnimation() {
     const bet1Element = document.getElementById('bet1');
     const bet2Element = document.getElementById('bet2');
+    const profit1Element = document.getElementById('profit1');
+    const profit2Element = document.getElementById('profit2');
+
     bet1Element.style.animation = 'none';
     bet2Element.style.animation = 'none';
+    profit1Element.style.animation = 'none';
+    profit2Element.style.animation = 'none';
+
     // Trigger reflow to restart the animation
     bet1Element.offsetHeight;
     bet2Element.offsetHeight;
+    profit1Element.offsetHeight;
+    profit2Element.offsetHeight;
+
     bet1Element.style.animation = '';
     bet2Element.style.animation = '';
+    profit1Element.style.animation = '';
+    profit2Element.style.animation = '';
 }
+
+function triggerRefreshAnimationForElement(element) {
+    element.style.animation = 'none';
+    element.offsetHeight; // Trigger reflow
+    element.style.animation = '';
+}
+
 
 document.addEventListener('keydown', function (event) {
     if (event.ctrlKey && event.key === '1') {
         const bet1 = document.getElementById('bet1').textContent;
         if (bet1) {
             navigator.clipboard.writeText(bet1).then(() => {
-                alert('Bet Size 1 copied to clipboard!');
+                triggerRefreshAnimationForElement(document.getElementById('bet1'));
             }).catch(err => {
                 console.error('Failed to copy: ', err);
             });
@@ -33,7 +51,7 @@ document.addEventListener('keydown', function (event) {
         const bet2 = document.getElementById('bet2').textContent;
         if (bet2) {
             navigator.clipboard.writeText(bet2).then(() => {
-                alert('Bet Size 2 copied to clipboard!');
+                triggerRefreshAnimationForElement(document.getElementById('bet2'));
             }).catch(err => {
                 console.error('Failed to copy: ', err);
             });
