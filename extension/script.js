@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const odds1Element = document.getElementById('odds1');
     const odds2Element = document.getElementById('odds2');
     const weightedElement = document.getElementById('weighted');
+    const roundWagersElement = document.getElementById('roundWagers');
 
     if (odds1Element) {
         const odds1Value = localStorage.getItem('odds1Value');
@@ -78,6 +79,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const weightedPreference = localStorage.getItem('weightedPreference');
         if (weightedPreference !== null) {
             weightedElement.checked = JSON.parse(weightedPreference);
+        }
+    }
+
+    if (roundWagersElement) {
+        const roundWagersPreference = localStorage.getItem('roundWagersPreference');
+        if (roundWagersPreference !== null) {
+            roundWagersElement.checked = JSON.parse(roundWagersPreference);
         }
     }
 
@@ -135,6 +143,10 @@ document.getElementById('odds2').addEventListener('input', function () {
 
 document.getElementById('totalInvestment').addEventListener('input', function () {
     localStorage.setItem('totalInvestmentValue', this.value);
+});
+
+document.getElementById('roundWagers').addEventListener('change', function () {
+    localStorage.setItem('roundWagersPreference', JSON.stringify(this.checked));
 });
 
 const odds1Element = document.getElementById('odds1');
