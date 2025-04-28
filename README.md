@@ -14,24 +14,24 @@ Speed is crucial when placing arbitrage bets, as live odds can change rapidly. Q
 - Calculate optimal bet sizes for arbitrage opportunities
 - Display profits for each outcome
 
-<img src="assets/regular.gif" alt="Regular" width="500">
+<img src="assets/regular.gif" alt="Regular" width="700">
 
 - Flexible weighting strategies:
   - Default mode ensures equal profit regardless of which outcome occurs
   - Optional "weighted" mode allocates bets to break even on the first odds while maximizing profit on the second odds.
 
-<img src="assets/weighted.gif" alt="Weighted" width="500">
+<img src="assets/weighted.gif" alt="Weighted" width="700">
 
 - Round calculated wagers to the nearest 10. This provides less suspicious wager amounts
 
-<img src="assets/round.gif" alt="Round Wagers" width="500">
+<img src="assets/round.gif" alt="Round Wagers" width="700">
 
 - Quick navigation with hotkeys and tabbing, without the need for point-and-click navigation
   - Tabbing is optimized for seamless data entry, automatically focusing on the next input field and triggering calculations.
   - Use `Ctrl + 1` to quickly copy the calculated bet size for Odds 1 to the clipboard.
   - Use `Ctrl + 2` to quickly copy the calculated bet size for Odds 2 to the clipboard.
 
-<img src="assets/copypaste.gif" alt="Copy Values" width="500">
+<img src="assets/copypaste.gif" alt="Copy Values" width="700">
 
 ## Usage
 
