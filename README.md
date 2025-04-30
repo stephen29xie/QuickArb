@@ -10,6 +10,9 @@ Speed is crucial when placing arbitrage bets, as live odds can change rapidly. Q
 1. Provide more information and configurability than arbitrage screening tools
 2. Be used with hotkeys, allowing you to save valuable seconds by calculating the arbitrage without moving your cursor or navigating to a separate tab or window
 
+
+QuickArb is available on the [Google Chrome Web Store](https://chromewebstore.google.com/detail/quickarb/hgieabdgdaihljgiippihbnbjjgpkbej?authuser=1&hl=en-GB). 
+
 ## Features
 - Calculate optimal bet sizes for arbitrage opportunities
 - Display profits for each outcome
@@ -47,14 +50,6 @@ By leveraging hotkeys, users can maximize the speed of their arbitrage betting p
 2. Enable "Developer mode" in the top right corner.
 3. Click "Load unpacked" and select the `extension` directory.
 4. The extension should now be available in your browser.
-
-## TODO
-- Upload QuickArb to the Chrome Web Store:
-  1. Create a developer account on the Chrome Web Store.
-  2. Prepare the extension package, ensuring all necessary files are included.
-  3. Follow the Chrome Web Store guidelines for uploading and publishing extensions.
-  4. Set up a listing with a detailed description, screenshots, and any other required information.
-  5. Submit the extension for review and address any feedback from the review process.
 
 
 ## Contributing
